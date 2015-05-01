@@ -1,0 +1,296 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		DF62CA8E1AF37AEA00CD84AC /* ProtobufEqualityTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF62CA8D1AF37AEA00CD84AC /* ProtobufEqualityTest.swift */; };
+		DF62CAD91AF384F100CD84AC /* ProtoPoint.pb.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF62CAD81AF384F100CD84AC /* ProtoPoint.pb.swift */; };
+		DF62CADD1AF3923700CD84AC /* ProtocolBuffers.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DF62CADC1AF3923700CD84AC /* ProtocolBuffers.framework */; };
+		DF62CAE01AF3937800CD84AC /* ProtocolBuffers.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = DF62CADC1AF3923700CD84AC /* ProtocolBuffers.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		DF62CADF1AF3937000CD84AC /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				DF62CAE01AF3937800CD84AC /* ProtocolBuffers.framework in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		DF62CA881AF37AEA00CD84AC /* ProtobufEqualityTest.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ProtobufEqualityTest.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		DF62CA8C1AF37AEA00CD84AC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DF62CA8D1AF37AEA00CD84AC /* ProtobufEqualityTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProtobufEqualityTest.swift; sourceTree = "<group>"; };
+		DF62CAD81AF384F100CD84AC /* ProtoPoint.pb.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ProtoPoint.pb.swift; path = "proto-generated/ProtoPoint.pb.swift"; sourceTree = "<group>"; };
+		DF62CADC1AF3923700CD84AC /* ProtocolBuffers.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ProtocolBuffers.framework; path = Carthage/Build/iOS/ProtocolBuffers.framework; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		DF62CA851AF37AEA00CD84AC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DF62CADD1AF3923700CD84AC /* ProtocolBuffers.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		DF62CA7D1AF37A9800CD84AC = {
+			isa = PBXGroup;
+			children = (
+				DF62CADC1AF3923700CD84AC /* ProtocolBuffers.framework */,
+				DF62CA8A1AF37AEA00CD84AC /* ProtobufEqualityTest */,
+				DF62CA891AF37AEA00CD84AC /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		DF62CA891AF37AEA00CD84AC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DF62CA881AF37AEA00CD84AC /* ProtobufEqualityTest.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DF62CA8A1AF37AEA00CD84AC /* ProtobufEqualityTest */ = {
+			isa = PBXGroup;
+			children = (
+				DF62CA8B1AF37AEA00CD84AC /* Supporting Files */,
+				DF62CA921AF37B5500CD84AC /* proto-generated */,
+				DF62CA8D1AF37AEA00CD84AC /* ProtobufEqualityTest.swift */,
+			);
+			path = ProtobufEqualityTest;
+			sourceTree = "<group>";
+		};
+		DF62CA8B1AF37AEA00CD84AC /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				DF62CA8C1AF37AEA00CD84AC /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		DF62CA921AF37B5500CD84AC /* proto-generated */ = {
+			isa = PBXGroup;
+			children = (
+				DF62CAD81AF384F100CD84AC /* ProtoPoint.pb.swift */,
+			);
+			name = "proto-generated";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		DF62CA871AF37AEA00CD84AC /* ProtobufEqualityTest */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DF62CA8F1AF37AEA00CD84AC /* Build configuration list for PBXNativeTarget "ProtobufEqualityTest" */;
+			buildPhases = (
+				DF62CA841AF37AEA00CD84AC /* Sources */,
+				DF62CA851AF37AEA00CD84AC /* Frameworks */,
+				DF62CA861AF37AEA00CD84AC /* Resources */,
+				DF62CADF1AF3937000CD84AC /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ProtobufEqualityTest;
+			productName = ProtobufEqualityTest;
+			productReference = DF62CA881AF37AEA00CD84AC /* ProtobufEqualityTest.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		DF62CA7E1AF37A9800CD84AC /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0630;
+				TargetAttributes = {
+					DF62CA871AF37AEA00CD84AC = {
+						CreatedOnToolsVersion = 6.3.1;
+					};
+				};
+			};
+			buildConfigurationList = DF62CA811AF37A9800CD84AC /* Build configuration list for PBXProject "ProtobufEqualityTest" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = DF62CA7D1AF37A9800CD84AC;
+			productRefGroup = DF62CA891AF37AEA00CD84AC /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				DF62CA871AF37AEA00CD84AC /* ProtobufEqualityTest */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		DF62CA861AF37AEA00CD84AC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		DF62CA841AF37AEA00CD84AC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DF62CAD91AF384F100CD84AC /* ProtoPoint.pb.swift in Sources */,
+				DF62CA8E1AF37AEA00CD84AC /* ProtobufEqualityTest.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		DF62CA821AF37A9800CD84AC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+			};
+			name = Debug;
+		};
+		DF62CA831AF37A9800CD84AC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+			};
+			name = Release;
+		};
+		DF62CA901AF37AEA00CD84AC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_FILE = ProtobufEqualityTest/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		DF62CA911AF37AEA00CD84AC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_FILE = ProtobufEqualityTest/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		DF62CA811AF37A9800CD84AC /* Build configuration list for PBXProject "ProtobufEqualityTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DF62CA821AF37A9800CD84AC /* Debug */,
+				DF62CA831AF37A9800CD84AC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DF62CA8F1AF37AEA00CD84AC /* Build configuration list for PBXNativeTarget "ProtobufEqualityTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DF62CA901AF37AEA00CD84AC /* Debug */,
+				DF62CA911AF37AEA00CD84AC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = DF62CA7E1AF37A9800CD84AC /* Project object */;
+}

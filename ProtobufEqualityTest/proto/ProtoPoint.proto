@@ -1,0 +1,4 @@
+message ProtoPoint {
+    required float latitude = 1;
+    required float longitude = 2;
+}
