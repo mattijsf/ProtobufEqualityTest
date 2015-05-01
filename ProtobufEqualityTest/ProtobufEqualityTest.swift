@@ -43,7 +43,7 @@ class ProtoPointEqualityTest: XCTestCase {
         XCTAssert(point1.latitude == 1.0, "")
         XCTAssert(point2.latitude == 2.0, "")
         
-        // Succeeds, calls the == function from Point.pb.swift as expected
+        // Succeeds, calls the == function from ProtoPoint.pb.swift as expected
         XCTAssert(!(point1 == point2), "")
     }
     
@@ -54,7 +54,7 @@ class ProtoPointEqualityTest: XCTestCase {
         XCTAssert(point1.latitude == 1.0, "")
         XCTAssert(point2.latitude == 2.0, "")
         
-        // Fails, should call the == function from Point.pb.swift and take the inverse just like the testRegularPoint() does. But that doesn't happen.
+        // Fails, should call the == function from ProtoPoint.pb.swift and take the inverse just like the testRegularPoint() does. But that doesn't happen.
         XCTAssert(point1 != point2, "")
     }
 }
