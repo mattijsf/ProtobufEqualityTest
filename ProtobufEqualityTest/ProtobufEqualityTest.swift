@@ -19,8 +19,7 @@ func == (lhs: RegularPoint, rhs: RegularPoint) -> Bool {
         lhs.longitude == rhs.longitude
 }
 
-class ProtobufEqualityTest: XCTestCase {
-    
+class RegularPointEqualityTest: XCTestCase {
     func testRegularPoint() {
         var point1 = RegularPoint()
         point1.latitude = 1.0
@@ -33,6 +32,9 @@ class ProtobufEqualityTest: XCTestCase {
         // works fine, calls the == function and takes the inverse implicitly (put break point to check)
         XCTAssert(point1 != point2, "")
     }
+}
+
+class ProtoPointEqualityTest: XCTestCase {
     
     func testProtoPointWorks() {
         var point1 = ProtoPoint.builder().setLatitude(1.0).setLongitude(1.0).build()
