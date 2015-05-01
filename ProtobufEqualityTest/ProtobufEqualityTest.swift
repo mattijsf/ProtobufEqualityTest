@@ -34,7 +34,18 @@ class ProtobufEqualityTest: XCTestCase {
         XCTAssert(point1 != point2, "")
     }
     
-    func testProtoPoint() {
+    func testProtoPointWorks() {
+        var point1 = ProtoPoint.builder().setLatitude(1.0).setLongitude(1.0).build()
+        var point2 = ProtoPoint.builder().setLatitude(2.0).setLongitude(2.0).build()
+        
+        XCTAssert(point1.latitude == 1.0, "")
+        XCTAssert(point2.latitude == 2.0, "")
+        
+        // Fails, should call the == function from Point.pb.swift and take the inverse. But the function == is never invoked (put breakpoint on the == func to check)
+        XCTAssert(!(point1 == point2), "")
+    }
+    
+    func testProtoPointShouldWork() {
         var point1 = ProtoPoint.builder().setLatitude(1.0).setLongitude(1.0).build()
         var point2 = ProtoPoint.builder().setLatitude(2.0).setLongitude(2.0).build()
         
